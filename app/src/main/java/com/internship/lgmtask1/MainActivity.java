@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                             Iterator it = jsonObject.keys();
                             while(it.hasNext()){
                                 String name = it.next().toString();
-                                City city = new City(name, jsonObject.getJSONObject(name).getString("active"));
+                                City city = new City(name, jsonObject.getJSONObject(name).getString("active")
+                                , jsonObject.getJSONObject(name).getString("confirmed"), jsonObject.getJSONObject(name).getString("recovered"));
                                 arrayList.add(city);
                             }
                             adapter.dataChange(arrayList);

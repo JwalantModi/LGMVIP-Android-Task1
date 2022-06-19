@@ -35,6 +35,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CityHolder> {
     public void onBindViewHolder(@NonNull CityHolder holder, int position) {
         holder.txtState.setText(list.get(position).getName());
         holder.txtCurrCases.setText("Active Cases: "+list.get(position).getCurrCases());
+        holder.txtConfCases.setText("Confirmed Cases: "+list.get(position).getConfCases());
+        holder.txtRecCases.setText("Recovered Cases: "+list.get(position).getRecCases());
     }
 
     @Override
@@ -46,12 +48,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.CityHolder> {
 
         TextView txtState;
         TextView txtCurrCases;
+        TextView txtConfCases;
+        TextView txtRecCases;
 
         public CityHolder(@NonNull View itemView) {
             super(itemView);
 
             txtState = itemView.findViewById(R.id.txtStatesName);
             txtCurrCases = itemView.findViewById(R.id.txtCurrentCases);
+            txtConfCases = itemView.findViewById(R.id.txtConfirmedCases);
+            txtRecCases = itemView.findViewById(R.id.txtRecoveredCases);
         }
     }
 }

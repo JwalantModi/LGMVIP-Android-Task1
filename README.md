@@ -1,6 +1,6 @@
-# LetsGrowMore Android Internship Project Code
-## Covid-19 Tracker Android Application
-- Worked as an Android Developer with Tech stack such as Java, Kotlin, Rest API, Android Studio.
-- Integrated REST API with the application using Retrofit Library to fetch the live Covid-19 data.
+# LetsGrowMore Android Internship
+### Description
+- Implement new features and refine existing features in an Android App using Java & XML.
+- Integrated REST API with the application using Retrofit Library to fetch the Live Data.
 - Also, decrease the load time of the android application.
 
